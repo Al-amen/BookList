@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Book List</title>
+
+    <style>
+        .success, .error{
+            color: wheat;
+            margin: 5px, 0 15px, 0;
+            padding: 5px;
+        }
+        .success{
+            background-color: green;
+        }
+        .error{
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Add Book</h3>
+        <form action="" id = 'book-form'>
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" id="author" class="u-full-width">
+            </div>
+            <div>
+                <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" class="u-full-width">
+            </div>
+            <input type="submit" value="Add Book">
+        </form>
+        <div></div>
+
+        <table class="u-full-width" id="book-list">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                </tr>
+            </thead>
+            <tbody id = "book-list">
+
+            </tbody>
+        </table>
+       
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
